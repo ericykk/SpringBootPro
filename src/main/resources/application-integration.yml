@@ -1,0 +1,11 @@
+spring:
+    datasource:
+        url: jdbc:mysql://10.73.181.25:3306/generalbase?useUnicode=true&characterEncoding=gbk
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+        initialSize: 5
+        maxActive: 50
+        maxIdle: 2
+        minIdle: 1
+        defaultAutoCommit: true

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>呃..出错了</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <a href="#" style="width:300px;height:350px;background:url(/images/404.png) no-repeat 0 0;float:left;display:block;margin-left:80px;" onclick="document.getElementById('show_error').style.display = 'block';return false;"></a>
+            <a href="/home" style="width:440px;height:384px;background:url(/images/404.png) no-repeat -320px 0px;float:left;display:block;"></a>
+        </div>
+        <div id="show_error" style="display:block;line-height:155%;float:left;margin-left:80px;">
+            <p class="red f16 bold">错误代码:404,异常信息：页面没有找到!</p>
+        </div>
+    </div>
+</body>
+</html>

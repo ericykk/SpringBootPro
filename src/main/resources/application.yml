@@ -1,0 +1,14 @@
+#spring active env
+#production integration development
+spring:
+   application:
+      name: SpringBootPro
+   profiles:
+      active: development
+
+#server config
+server:
+    port: 8085
+
+
+   
