@@ -3,6 +3,8 @@ package com.eric.spring.boot.action.service;
 import com.eric.spring.boot.action.dao.GeneralDao;
 import com.eric.spring.boot.action.model.User;
 import org.apache.catalina.LifecycleState;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,7 @@ import java.util.List;
  */
 @Service
 public class GeneralService {
+
     @Autowired
     private GeneralDao generalDao;
 
@@ -29,4 +32,5 @@ public class GeneralService {
     public List<User> getUser(String name){
         return  generalDao.getUser(name);
     }
+
 }

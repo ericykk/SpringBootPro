@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="false">
 
+	<!--使用springProfile标签设置不同环境的日志 使用logback-spring.xml命名日志文件支持使用该标签-->
 	<springProfile name="development">
 		<property name="logDir" value="./logs" />
 	</springProfile>
@@ -8,27 +10,28 @@
 		<property name="logDir" value="./logs" />
 	</springProfile>
       
-       <springProfile name="production">
-          <property name="logDir" value="/home/log/jar" />cd
-      </springProfile>
+    <springProfile name="production">
+        <property name="logDir" value="/home/log/boot" />
+    </springProfile>
 
+	<!--控制台日志-->
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-		<!-- encoder 默认配置为PatternLayoutEncoder -->
 		<encoder>
-			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
 			</pattern>
 		</encoder>
 	</appender>
 
-	<appender name="INFO"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<!-- encoder 默认配置为PatternLayoutEncoder -->
+	<appender name="INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<encoder>
-			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
 			</pattern>
 		</encoder>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${logDir}/infoLog.%d{yyyy-MM-dd}.log
+			<fileNamePattern>
+				${logDir}/infoLog.%d{yyyy-MM-dd}.log
 			</fileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
@@ -39,15 +42,15 @@
 		</filter>
 	</appender>
 
-	<appender name="ERROR"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<!-- encoder 默认配置为PatternLayoutEncoder -->
+	<appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<encoder>
-			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+			<pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
 			</pattern>
 		</encoder>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${logDir}/errLog.%d{yyyy-MM-dd}.log
+			<fileNamePattern>
+				${logDir}/errLog.%d{yyyy-MM-dd}.log
 			</fileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
@@ -58,9 +61,6 @@
 		</filter>
 	</appender>
 
-
-	<!-- Enable FILE and STDOUT appenders for all log messages. By default, 
-		only log at level INFO and above. -->
 	<root level="INFO">
 		<springProfile name="!production">
 			<appender-ref ref="STDOUT" />
@@ -69,6 +69,6 @@
 		<appender-ref ref="ERROR" />
 	</root>
 	<springProfile name="!production">
-		<logger name="dao" level="DEBUG" />
+		<logger name="mybatis" level="DEBUG"/>
 	</springProfile>
 </configuration>  

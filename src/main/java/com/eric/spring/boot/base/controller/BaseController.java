@@ -1,6 +1,6 @@
 package com.eric.spring.boot.base.controller;
 
-import com.eric.spring.boot.base.utils.JSONParser;
+import com.eric.spring.boot.base.util.JSONParser;
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -2,7 +2,7 @@ package com.eric.spring.boot.action.controller;
 
 import com.eric.spring.boot.action.model.User;
 import com.eric.spring.boot.action.service.GeneralService;
-import com.eric.spring.boot.base.utils.JSONParser;
+import com.eric.spring.boot.base.util.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "/spring/boot")
 public class GeneralController {
-
     @Autowired
     private GeneralService generalService;
 

@@ -1,4 +1,4 @@
-package com.eric.spring.boot.base.utils;
+package com.eric.spring.boot.base.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
