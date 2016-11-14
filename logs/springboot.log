@@ -147,3 +147,158 @@
 2016-11-14 16:08:19.491  INFO 4237 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2016-11-14 16:08:19.492  INFO 4237 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2016-11-14 16:08:19.552  INFO 4237 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2016-11-14 16:11:29.047  INFO 4237 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a0241c5: startup date [Mon Nov 14 16:07:53 CST 2016]; root of context hierarchy
+2016-11-14 16:11:29.051  INFO 4237 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-11-14 16:11:29.054  INFO 4237 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2016-11-14 16:11:29.055  WARN 4237 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2016-11-14 16:11:29.066  INFO 4237 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-11-14 16:11:29.077  INFO 4237 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2016-11-14 16:11:36.768  INFO 4360 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : Starting SpringBootProApplication on EricMacBook-Pro.local with PID 4360 (/Users/yangkang/Documents/working/gitworkspace/SpringBootPro/target/classes started by yangkang in /Users/yangkang/Documents/working/gitworkspace/SpringBootPro)
+2016-11-14 16:11:36.774  INFO 4360 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : The following profiles are active: development
+2016-11-14 16:11:37.354  INFO 4360 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@284442eb: startup date [Mon Nov 14 16:11:37 CST 2016]; root of context hierarchy
+2016-11-14 16:11:39.247  WARN 4360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.eric.spring.boot]' package. Please check your configuration.
+2016-11-14 16:11:39.995  INFO 4360 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81590601] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-14 16:11:40.598  INFO 4360 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8085 (http)
+2016-11-14 16:11:40.619  INFO 4360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-14 16:11:40.621  INFO 4360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-11-14 16:11:40.761  INFO 4360 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-14 16:11:40.761  INFO 4360 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3411 ms
+2016-11-14 16:11:41.326  INFO 4360 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'statViewServlet' to [/druid/*]
+2016-11-14 16:11:41.328  INFO 4360 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-14 16:11:41.328  INFO 4360 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'webServlet' to [/h2-console/*]
+2016-11-14 16:11:41.334  INFO 4360 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-14 16:11:41.335  INFO 4360 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-14 16:11:41.335  INFO 4360 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-14 16:11:41.335  INFO 4360 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-14 16:11:41.335  INFO 4360 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webStatFilter' to urls: [/*]
+2016-11-14 16:11:42.163  INFO 4360 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2016-11-14 16:11:42.336  INFO 4360 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-14 16:11:42.337  WARN 4360 --- [restartedMain] org.hibernate.ejb.HibernatePersistence   : HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-11-14 16:11:42.360  INFO 4360 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-14 16:11:42.514  INFO 4360 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-14 16:11:42.516  INFO 4360 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-11-14 16:11:42.518  INFO 4360 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-11-14 16:11:42.748  INFO 4360 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-14 16:11:42.830  INFO 4360 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-14 16:11:42.887  INFO 4360 --- [restartedMain] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-11-14 16:11:43.468  INFO 4360 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2016-11-14 16:11:43.779  INFO 4360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@284442eb: startup date [Mon Nov 14 16:11:37 CST 2016]; root of context hierarchy
+2016-11-14 16:11:43.904  INFO 4360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring/boot/getUser],methods=[GET]}" onto public com.eric.spring.boot.action.model.User com.eric.spring.boot.action.controller.GeneralController.getUser(java.lang.String)
+2016-11-14 16:11:43.906  INFO 4360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring/boot/getNowDate],methods=[GET]}" onto public java.lang.String com.eric.spring.boot.action.controller.GeneralController.getNowDate()
+2016-11-14 16:11:43.908  INFO 4360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-14 16:11:43.909  INFO 4360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-14 16:11:43.952  INFO 4360 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:11:43.952  INFO 4360 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:11:44.026  INFO 4360 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:11:44.872  INFO 4360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2016-11-14 16:11:45.110  INFO 4360 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-11-14 16:11:45.113  INFO 4360 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2016-11-14 16:11:45.121  INFO 4360 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2016-11-14 16:11:45.232  INFO 4360 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8085 (http)
+2016-11-14 16:11:45.239  INFO 4360 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : Started SpringBootProApplication in 9.382 seconds (JVM running for 10.777)
+2016-11-14 16:11:53.699  INFO 4360 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-14 16:11:53.701  INFO 4360 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-14 16:11:53.748  INFO 4360 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2016-11-14 16:12:41.405  INFO 4360 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@284442eb: startup date [Mon Nov 14 16:11:37 CST 2016]; root of context hierarchy
+2016-11-14 16:12:41.416  INFO 4360 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-11-14 16:12:41.417  INFO 4360 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2016-11-14 16:12:41.419  WARN 4360 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2016-11-14 16:12:41.423  INFO 4360 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-11-14 16:12:41.435  INFO 4360 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2016-11-14 16:12:46.085  INFO 4374 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : Starting SpringBootProApplication on EricMacBook-Pro.local with PID 4374 (/Users/yangkang/Documents/working/gitworkspace/SpringBootPro/target/classes started by yangkang in /Users/yangkang/Documents/working/gitworkspace/SpringBootPro)
+2016-11-14 16:12:46.090  INFO 4374 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : The following profiles are active: development
+2016-11-14 16:12:46.873  INFO 4374 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7da9c495: startup date [Mon Nov 14 16:12:46 CST 2016]; root of context hierarchy
+2016-11-14 16:12:48.566  WARN 4374 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.eric.spring.boot]' package. Please check your configuration.
+2016-11-14 16:12:49.319  INFO 4374 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$108c9b87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-14 16:12:49.954  INFO 4374 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8085 (http)
+2016-11-14 16:12:49.974  INFO 4374 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-14 16:12:49.976  INFO 4374 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-11-14 16:12:50.113  INFO 4374 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-14 16:12:50.114  INFO 4374 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3247 ms
+2016-11-14 16:12:50.683  INFO 4374 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'statViewServlet' to [/druid/*]
+2016-11-14 16:12:50.685  INFO 4374 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-14 16:12:50.686  INFO 4374 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'webServlet' to [/h2-console/*]
+2016-11-14 16:12:50.691  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-14 16:12:50.692  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-14 16:12:50.693  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-14 16:12:50.693  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-14 16:12:50.693  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webStatFilter' to urls: [/*]
+2016-11-14 16:12:51.453  INFO 4374 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2016-11-14 16:12:51.615  INFO 4374 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-14 16:12:51.616  WARN 4374 --- [restartedMain] org.hibernate.ejb.HibernatePersistence   : HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-11-14 16:12:51.637  INFO 4374 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-14 16:12:51.762  INFO 4374 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-14 16:12:51.767  INFO 4374 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-11-14 16:12:51.770  INFO 4374 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-11-14 16:12:52.051  INFO 4374 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-14 16:12:52.140  INFO 4374 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-14 16:12:52.187  INFO 4374 --- [restartedMain] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-11-14 16:12:52.700  INFO 4374 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2016-11-14 16:12:53.060  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7da9c495: startup date [Mon Nov 14 16:12:46 CST 2016]; root of context hierarchy
+2016-11-14 16:12:53.184  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring/boot/getUser],methods=[GET]}" onto public com.eric.spring.boot.action.model.User com.eric.spring.boot.action.controller.GeneralController.getUser(java.lang.String)
+2016-11-14 16:12:53.186  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring/boot/getNowDate],methods=[GET]}" onto public java.lang.String com.eric.spring.boot.action.controller.GeneralController.getNowDate()
+2016-11-14 16:12:53.188  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-14 16:12:53.189  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-14 16:12:53.236  INFO 4374 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:12:53.236  INFO 4374 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:12:53.309  INFO 4374 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:12:54.262  INFO 4374 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2016-11-14 16:12:54.591  INFO 4374 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-11-14 16:12:54.593  INFO 4374 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2016-11-14 16:12:54.603  INFO 4374 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2016-11-14 16:12:54.709  INFO 4374 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8085 (http)
+2016-11-14 16:12:54.720  INFO 4374 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : Started SpringBootProApplication in 9.812 seconds (JVM running for 10.977)
+2016-11-14 16:13:00.131  INFO 4374 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-11-14 16:13:00.132  INFO 4374 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-11-14 16:13:00.186  INFO 4374 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2016-11-14 16:13:15.801  INFO 4374 --- [Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7da9c495: startup date [Mon Nov 14 16:12:46 CST 2016]; root of context hierarchy
+2016-11-14 16:13:15.809  INFO 4374 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-11-14 16:13:15.816  INFO 4374 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2016-11-14 16:13:15.818  WARN 4374 --- [Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2016-11-14 16:13:15.822  INFO 4374 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-11-14 16:13:15.832  INFO 4374 --- [Thread-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2016-11-14 16:13:16.295  INFO 4374 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : Starting SpringBootProApplication on EricMacBook-Pro.local with PID 4374 (/Users/yangkang/Documents/working/gitworkspace/SpringBootPro/target/classes started by yangkang in /Users/yangkang/Documents/working/gitworkspace/SpringBootPro)
+2016-11-14 16:13:16.295  INFO 4374 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : The following profiles are active: development
+2016-11-14 16:13:16.299  INFO 4374 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@375ffb91: startup date [Mon Nov 14 16:13:16 CST 2016]; root of context hierarchy
+2016-11-14 16:13:17.842  WARN 4374 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.eric.spring.boot]' package. Please check your configuration.
+2016-11-14 16:13:18.260  INFO 4374 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$108c9b87] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-14 16:13:18.357  INFO 4374 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8085 (http)
+2016-11-14 16:13:18.358  INFO 4374 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-14 16:13:18.359  INFO 4374 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-11-14 16:13:18.369  INFO 4374 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-14 16:13:18.371  INFO 4374 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2072 ms
+2016-11-14 16:13:18.800  INFO 4374 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'statViewServlet' to [/druid/*]
+2016-11-14 16:13:18.804  INFO 4374 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-14 16:13:18.805  INFO 4374 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'webServlet' to [/h2-console/*]
+2016-11-14 16:13:18.805  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-14 16:13:18.805  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-14 16:13:18.805  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-14 16:13:18.806  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-14 16:13:18.806  INFO 4374 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webStatFilter' to urls: [/*]
+2016-11-14 16:13:19.011  INFO 4374 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2016-11-14 16:13:19.044  INFO 4374 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-14 16:13:19.044  WARN 4374 --- [restartedMain] org.hibernate.ejb.HibernatePersistence   : HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-11-14 16:13:19.044  INFO 4374 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-14 16:13:19.057  INFO 4374 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-14 16:13:19.059  INFO 4374 --- [restartedMain] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-11-14 16:13:19.305  INFO 4374 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will NOT be routed to the target instance.
+2016-11-14 16:13:19.494  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@375ffb91: startup date [Mon Nov 14 16:13:16 CST 2016]; root of context hierarchy
+2016-11-14 16:13:19.535  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring/boot/getUser],methods=[GET]}" onto public com.eric.spring.boot.action.model.User com.eric.spring.boot.action.controller.GeneralController.getUser(java.lang.String)
+2016-11-14 16:13:19.535  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/spring/boot/getNowDate],methods=[GET]}" onto public java.lang.String com.eric.spring.boot.action.controller.GeneralController.getNowDate()
+2016-11-14 16:13:19.570  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-14 16:13:19.571  INFO 4374 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-14 16:13:19.591  INFO 4374 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:13:19.606  INFO 4374 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:13:19.669  INFO 4374 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-14 16:13:19.896  INFO 4374 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2016-11-14 16:13:20.167  INFO 4374 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-11-14 16:13:20.168  INFO 4374 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2016-11-14 16:13:20.175  INFO 4374 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2016-11-14 16:13:20.190  INFO 4374 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8085 (http)
+2016-11-14 16:13:20.192  INFO 4374 --- [restartedMain] c.e.s.boot.SpringBootProApplication      : Started SpringBootProApplication in 4.015 seconds (JVM running for 36.448)
