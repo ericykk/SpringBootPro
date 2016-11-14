@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(value = "/spring/boot")
 public class GeneralController {
+
     @Autowired
     private GeneralService generalService;
 
@@ -29,4 +30,5 @@ public class GeneralController {
     public User getUser(@RequestParam(value = "name") String name){
         return generalService.getUser(name).get(0);
     }
+
 }

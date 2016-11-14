@@ -1051,3 +1051,8 @@ java.lang.ClassNotFoundException: com.mysql.jdbc.Driveuse
 2016-10-28 15:50:03 [http-nio-8085-exec-8] DEBUG mybatis.GeneralMapper.getUser - ==>  Preparing: select *from USER where name = ? 
 2016-10-28 15:50:03 [http-nio-8085-exec-8] DEBUG mybatis.GeneralMapper.getUser - ==> Parameters: 张三(String)
 2016-10-28 15:50:03 [http-nio-8085-exec-8] DEBUG mybatis.GeneralMapper.getUser - <==      Total: 1
+2016-10-28 18:34:57 [Thread-13] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63284092: startup date [Fri Oct 28 15:39:58 CST 2016]; root of context hierarchy
+2016-10-28 18:34:57 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2016-10-28 18:34:57 [Thread-13] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2016-10-28 18:34:57 [Thread-13] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2016-10-28 18:34:57 [Thread-13] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

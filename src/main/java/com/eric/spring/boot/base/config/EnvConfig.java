@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
  * 环境变量配置
  */
 @Component
-@ConfigurationProperties(prefix = "spring.profiles")
 public class EnvConfig {
 
 
