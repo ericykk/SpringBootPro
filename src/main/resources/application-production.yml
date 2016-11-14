@@ -1,3 +1,4 @@
+#数据库连接池
 spring:
     datasource:
         # 驱动配置
@@ -29,3 +30,14 @@ spring:
         filters: stat,wall,log4j
         # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+#应用端口配置
+server:
+    port: 8085
+
+#日志配置
+logging:
+    level:
+      com.ibatis: INFO
+      org.apache.http: INFO
+    file: /home/log/springboot.log

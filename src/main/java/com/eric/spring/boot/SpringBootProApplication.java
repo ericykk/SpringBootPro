@@ -10,10 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * SpringBoot启动类
  */
-@SpringBootApplication
-@EnableAutoConfiguration
-@Configuration
-@ComponentScan
+@SpringBootApplication //等同于同时配置@Configuration @EnableAutoConfiguration @ComponentScan
 public class SpringBootProApplication {
 
     public static void main(String[] args) {

@@ -6,9 +6,5 @@ spring:
    profiles:
       active: development
 
-#server config
-server:
-    port: 8085
-
 
    
