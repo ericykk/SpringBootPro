@@ -31,13 +31,32 @@ spring:
         # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 
-#应用端口配置
-server:
-    port: 8085
+    #RabbitMQ配置
+    rabbitmq:
+      host: 127.0.0.1
+      port: 5672
+      username: guest
+      password: guest
+      virtual-host: /
 
 #日志配置
 logging:
     level:
-      com.ibatis: INFO
+      com.ibatis: DEBUG
       org.apache.http: INFO
     file: logs/springboot.log
+
+
+#spring.rabbitmq.dynamic 是否创建AmqpAdmin bean. 默认为: true
+#spring.rabbitmq.listener.acknowledge-mode 指定Acknowledge的模式.
+#spring.rabbitmq.listener.auto-startup 是否在启动时就启动mq，默认: true
+#spring.rabbitmq.listener.concurrency 指定最小的消费者数量.
+#spring.rabbitmq.listener.max-concurrency 指定最大的消费者数量.
+#spring.rabbitmq.listener.prefetch 指定一个请求能处理多少个消息，如果有事务的话，必须大于等于transaction数量.
+#spring.rabbitmq.listener.transaction-size 指定一个事务处理的消息数量，最好是小于等于prefetch的数量.
+#spring.rabbitmq.requested-heartbeat 指定心跳超时，0为不指定.
+#spring.rabbitmq.ssl.enabled 是否开始SSL，默认: false
+#spring.rabbitmq.ssl.key-store 指定持有SSL certificate的key store的路径
+#spring.rabbitmq.ssl.key-store-password 指定访问key store的密码.
+#spring.rabbitmq.ssl.trust-store 指定持有SSL certificates的Trust store.
+#spring.rabbitmq.ssl.trust-store-password 指定访问trust store的密码

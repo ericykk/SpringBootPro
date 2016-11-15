@@ -7,4 +7,6 @@ spring:
       active: development
 
 
+server:
+      port: 8085
    

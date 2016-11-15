@@ -7,19 +7,20 @@ package com.eric.spring.boot.action.model;
  * Time:16:29
  * version 1.0.0
  */
-public class User {
-
+public class LoginUser {
     private int id;
     private String name;
     private String sex;
-    public User(){
+
+    public LoginUser(){
 
     }
 
-    public User(String name,String sex){
+    public LoginUser(String name,String sex){
         this.name = name;
         this.sex = sex;
     }
+
     public int getId() {
         return id;
     }

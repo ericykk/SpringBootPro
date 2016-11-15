@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
  * version 1.0.0
  */
 public class LogTest extends BaseTest{
+
     private Logger logger = LoggerFactory.getLogger(LogTest.class);
 
     @Test
